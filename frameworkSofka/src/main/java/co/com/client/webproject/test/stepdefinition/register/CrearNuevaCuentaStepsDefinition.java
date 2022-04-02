@@ -1,4 +1,4 @@
-package co.com.client.webproject.test.stepdefinition;
+package co.com.client.webproject.test.stepdefinition.register;
 
 import co.com.client.webproject.test.controllers.CreateAnAccountWebController;
 import co.com.client.webproject.test.controllers.LoginPageController;
@@ -6,6 +6,7 @@ import co.com.client.webproject.test.controllers.MyAccountWebController;
 import co.com.client.webproject.test.controllers.openwebpage.StartBrowserWebController;
 import co.com.client.webproject.test.data.objects.TestInfo;
 import co.com.client.webproject.test.model.Customer;
+import co.com.client.webproject.test.stepdefinition.Setup;
 import co.com.sofka.test.actions.WebAction;
 import co.com.sofka.test.evidence.reports.Assert;
 import co.com.sofka.test.evidence.reports.Report;
@@ -18,7 +19,7 @@ import io.cucumber.java.es.Entonces;
 
 import static co.com.client.webproject.test.helpers.Dictionary.SPACE_STRING;
 
-public class CrearNuevaCuentaStepsDefinition extends Setup{
+public class CrearNuevaCuentaStepsDefinition extends Setup {
 
     private WebAction webAction;
     private Customer customer;
@@ -35,7 +36,7 @@ public class CrearNuevaCuentaStepsDefinition extends Setup{
         StartBrowserWebController startBrowserWebController = new StartBrowserWebController();
         startBrowserWebController.setWebAction(webAction);
         startBrowserWebController.setBrowser(browser());
-        startBrowserWebController.setFeatue(testInfo.getFeatureName());
+        startBrowserWebController.setFeature(testInfo.getFeatureName());
         startBrowserWebController.abrirTiendaOnline();
     }
 
