@@ -14,6 +14,12 @@ public class Customer {
     private String mobilePhone;
     private String state;
 
+    private String message;
+
+    public String getMessage() {
+        return message;
+    }
+
     public String getEmail() {
         return email;
     }

@@ -1,5 +1,6 @@
 package co.com.client.webproject.test.controllers;
 
+import co.com.client.webproject.test.page.ContactUsPage;
 import co.com.client.webproject.test.page.LandingPage;
 import co.com.sofka.test.actions.WebAction;
 import co.com.sofka.test.evidence.reports.Report;
@@ -22,4 +23,20 @@ public class LoginPageController {
             Report.reportFailure("Ocurrio un error al intentar abrir la tienda online", e);
         }
     }
+
+
+    public void irHaciaContactUs(){
+        try{
+            ContactUsPage contactUsPage = new ContactUsPage(webAction.getDriver());
+
+            webAction.click(contactUsPage.getContactUs(), 2,true);
+
+        } catch (WebActionsException e) {
+            Report.reportFailure("Ocurrio un error al intentar abrir la tienda online", e);
+        }
+    }
+
+
+
+
 }

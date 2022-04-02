@@ -1,4 +1,4 @@
-package co.com.client.webproject.test.runners;
+package co.com.client.webproject.test.runners.register;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;

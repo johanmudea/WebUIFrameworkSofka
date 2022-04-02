@@ -54,6 +54,7 @@ public class CrearNuevaCuentaStepsDefinition extends Setup {
 
     @Entonces("como resultado el usuario quedará logueado dentro de su respectiva sesión per se.")
     public void comoResultadoElUsuarioQuedaraLogueadoDentroDeSuRespectivaSesionPerSe() {
+
         MyAccountWebController myAccountWebController = new MyAccountWebController();
         myAccountWebController.setWebAction(webAction);
         String userName = myAccountWebController.obtenerNombreDeNuevoUsuario();

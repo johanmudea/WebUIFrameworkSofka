@@ -11,6 +11,8 @@ public class Dictionary {
 
     public static final String EMAIL_DOMAIN = "@sofmail.com";
 
+    public static final String MESSAGE = "Esto es una prueba";
+
     public static final String FILE_EVIDENCE_PROPERTY = "files.evidence";
     public static final String APP_URL_PROPERTY = "app.url";
 
