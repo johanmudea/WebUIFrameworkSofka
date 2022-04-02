@@ -32,7 +32,7 @@ public class ContactUsPage {
     @FindBy(xpath = "html/body/div/div[2]/div/div[3]/div[1]/p")
     WebElement contactSuccessful;
 
-    @FindBy(id = "email.errors")
+    @FindBy(xpath = "html/body/div/div[2]/div/div[3]/div[1]/div/ol/li")
     @CacheLookup
     WebElement errorMailText;
 
