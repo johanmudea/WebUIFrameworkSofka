@@ -22,7 +22,7 @@ public class DressesPage {
     WebElement addToChartButton;
 
 
-    @FindBy(xpath = "//div[4]/div/div")
+    @FindBy(xpath = "html/body/div/div/header/div[3]/div[1]/div[1]/div[4]/div/div[1]/h2")
     @CacheLookup
     WebElement addedMessage;
 

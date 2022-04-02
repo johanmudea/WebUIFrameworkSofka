@@ -3,6 +3,7 @@ package co.com.client.webproject.test.controllers;
 import co.com.client.webproject.test.helpers.Seconds;
 import co.com.client.webproject.test.page.DressesPage;
 import co.com.client.webproject.test.page.MyAccountPage;
+import co.com.client.webproject.test.page.TshirtsPage;
 import co.com.sofka.test.actions.WebAction;
 import co.com.sofka.test.evidence.reports.Report;
 import co.com.sofka.test.exceptions.WebActionsException;
@@ -34,6 +35,19 @@ public class MyAccountWebController {
         try{
             DressesPage dressesPage = new DressesPage(webAction.getDriver());
             webAction.click(dressesPage.getLinkDresses(), Seconds.TEN_SECONDS.getValue(), true);
+
+
+        } catch (WebActionsException e) {
+            Report.reportFailure("Ocurrio un error al ingresar a vestidos.", e);
+        }
+
+    }
+
+    public void comprarCamisetas(){
+
+        try{
+            TshirtsPage tshirtsPage = new TshirtsPage(webAction.getDriver());
+            webAction.click(tshirtsPage.getLinkTshirts(), Seconds.TEN_SECONDS.getValue(), true);
 
 
         } catch (WebActionsException e) {
