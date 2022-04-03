@@ -12,7 +12,7 @@ public class Setup {
         browserConfiguration.setBrowser(Browser.Browsers.CHROME);
         browserConfiguration.setIncognito(true);
         browserConfiguration.setAutoDriverDownload(true);
-        //browserConfiguration.setDriverVersion("95.0.4638.54");
+
         browserConfiguration.setChromeOptions(chomeOptions());
 
         return browserConfiguration;

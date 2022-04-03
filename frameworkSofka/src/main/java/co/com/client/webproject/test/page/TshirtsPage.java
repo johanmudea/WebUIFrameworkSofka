@@ -20,7 +20,7 @@ public class TshirtsPage {
     @CacheLookup
     WebElement addToChartBtn;
 
-  ////div[@id='layer_cart']/div/div/h2
+
     @FindBy(xpath = "html/body/div/div/header/div[3]/div[1]/div[1]/div[4]/div/div[1]/h2")
     @CacheLookup
     WebElement addMessage;
